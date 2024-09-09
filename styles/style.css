@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 26px;
+}
+
+body {
+    font-family: 'San Francisco Pro Text', arial, sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/*Навигационное меню*/
+
+header {
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 112px;
+    height: 112px;
+}
+
+header nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.77rem;
+    color: #000;
+}
+
+header nav a:nth-child(2) {
+    margin-right: 135px;
+    margin-left: 78px;
+}
