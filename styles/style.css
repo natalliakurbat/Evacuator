@@ -97,6 +97,10 @@ h1 {
     font-size: 1.23rem;
 }
 
+.posts p {
+    font-size: 0.77rem;
+}
+
 .post {
     display: flex;
     justify-content: space-between;
@@ -107,8 +111,100 @@ table {
     width: 498px;
     color: #777777;
     font-size: 0.77rem;
+    border-collapse: collapse;
+    border-spacing: 0 12px;
+}
+
+.tr-margin {
+    height: 12px;
+    background-color: #fff;
 }
 
 tr {
     background-color: #F2F4F8;
+}
+
+td:first-child {
+    padding-left: 20px;
+    border-radius: 10px 0 0 10px;
+}
+
+td:last-child {
+    padding-right: 20px;
+    text-align: right;
+    border-radius: 0 10px 10px 0;
+    font-weight: bold;
+}
+
+.phone {
+    display: block;
+    background-color: #0297D4;
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: center;
+    width: 335px;
+    height: 59px;
+    line-height: 59px;
+    border-radius: 50px;
+}
+
+.phone:last-of-type {
+    margin: 12px 0 21.5px;
+}
+
+.phone:first-of-type::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/phone.svg");
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.phone:last-of-type::before {
+    display: inline-block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/phone-rotary.svg");
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.location {
+    background-color: #FFF5CC;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-size: 0.77rem;
+    margin-bottom: 21.5px;
+}
+
+.location p:first-child {
+    color: #777777;
+    margin-bottom: 12px;
+}
+
+.location p i {
+    color: #777777;
+    margin-right: 4px;
+}
+
+.advertising {
+    font-size: 0.62rem;
+    color: #0297D4;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #0297D4;
+    border-radius: 50px;
+    padding: 16px 0;
+}
+
+.advertising p {
+    font-size: 12px;
+}
+
+.advertising a {
+    color: #0297D4;
 }
