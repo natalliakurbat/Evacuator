@@ -18,6 +18,10 @@ body {
     margin: 0 auto;
 }
 
+section:not(:nth-child(1), :nth-child(2)) {
+    margin: 100px 0;
+}
+
 
 /*Навигационное меню*/
 
@@ -69,6 +73,11 @@ header nav .button-advert {
     position: relative;
 }
 
+.title {
+    height: 142px;
+    margin-bottom: 120px;
+}
+
 h1 {
     color: #fff;
     background-image: url("../img/backgroung.png");
@@ -99,6 +108,10 @@ h1 {
 
 .posts p {
     font-size: 0.77rem;
+}
+
+.posts:not(:last-child) {
+    margin-bottom: 44px;
 }
 
 .post {
@@ -207,4 +220,95 @@ td:last-child {
 
 .advertising a {
     color: #0297D4;
+}
+
+
+/*Номера страниц*/
+
+.pages {
+    display: inline-block;
+    margin: 52px auto 80px;
+}
+
+.pages a {
+    display: inline-block;
+    text-decoration: none;
+    color: #0297D4;
+    font-weight: bold;
+    width: 52px;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #0297D4;
+    border-radius: 6px;
+}
+
+.pages a:first-child {
+    color: #fff;
+    background-color: #0297D4;
+}
+
+.pages a:not(:last-child) {
+    margin-right: 18px;
+}
+
+
+/*добавить объявление*/
+
+.advert {
+    position: relative;
+}
+
+.advert-background {
+    background-image: url("../img/backgroung.png");
+    position: relative;
+    bottom: 25px;
+}
+
+.advert .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.illustration {
+    width: 210px;
+    height: 121px;
+    margin: 40px 0 10px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.54rem;
+    position: relative;
+    top: 15px;
+}
+
+.advert a {
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+}
+
+
+/*Как вызвать эвакуатор*/
+
+.how-to-call .wrapper {
+    display: flex;
+    gap: 39px;
+}
+
+.how-to-call-informaton {
+    text-align: left;
+}
+
+.how-to-call-informaton h3 {
+    font-size: 1.54rem;
+}
+
+.how-to-call-informaton p:first-of-type {
+    margin: 48px 18px 48px 0;
+}
+
+.how-to-call-informaton p {
+    margin-right: 18px;
 }
