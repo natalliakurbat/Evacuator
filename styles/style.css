@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: 'San Francisco Pro Text', arial, sans-serif;
-    text-align: center;
 }
 
 .wrapper {
@@ -19,7 +18,34 @@ body {
 }
 
 section:not(:nth-child(1), :nth-child(2)) {
-    margin: 100px 0;
+    padding: 100px 0 100px;
+}
+
+h1 {
+    color: #fff;
+    background-image: url("../img/backgroung.png");
+    font-size: 1.92rem;
+    line-height: 180px;
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 20px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.54rem;
+    position: relative;
+    top: 15px;
+}
+
+h3 {
+    font-size: 1.54rem;
+    margin-bottom: 48px;
+}
+
+.cards,
+.what-inside {
+    background-color: #F2F4F8;
 }
 
 
@@ -69,23 +95,12 @@ header nav .button-advert {
 
 .cards {
     text-align: center;
-    background-color: #F2F4F8;
     position: relative;
 }
 
 .title {
     height: 142px;
     margin-bottom: 120px;
-}
-
-h1 {
-    color: #fff;
-    background-image: url("../img/backgroung.png");
-    font-size: 1.92rem;
-    line-height: 180px;
-    letter-spacing: 2px;
-    position: relative;
-    bottom: 20px;
 }
 
 .city {
@@ -276,13 +291,6 @@ td:last-child {
     margin: 40px 0 10px;
 }
 
-h2 {
-    color: #fff;
-    font-size: 1.54rem;
-    position: relative;
-    top: 15px;
-}
-
 .advert a {
     text-decoration: none;
     position: relative;
@@ -291,6 +299,10 @@ h2 {
 
 
 /*Как вызвать эвакуатор*/
+
+section.how-to-call {
+    padding: 80px 0 70px;
+}
 
 .how-to-call .wrapper {
     display: flex;
@@ -301,14 +313,65 @@ h2 {
     text-align: left;
 }
 
-.how-to-call-informaton h3 {
-    font-size: 1.54rem;
-}
-
 .how-to-call-informaton p:first-of-type {
     margin: 48px 18px 48px 0;
 }
 
 .how-to-call-informaton p {
     margin-right: 18px;
+}
+
+
+/*Что нужно для заказа эвакуатора*/
+
+.what-to-know {
+    background-color: #FFF5CC;
+}
+
+.what-to-know-info {
+    display: flex;
+    gap: 20px;
+}
+
+.what-to-know-info img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 32px;
+}
+
+
+/*Что входит в стоимость*/
+
+.what-inside p:nth-of-type(2) {
+    font-weight: bold;
+    margin: 32px 0 32px;
+}
+
+.aspects {
+    display: flex;
+    gap: 24px;
+    color: #fff;
+    text-align: center;
+}
+
+.aspects article {
+    background-color: #0297D4;
+    max-width: 332px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 0px 20px 28px;
+}
+
+.aspects article h4 {
+    font-size: 0.77rem;
+    margin-bottom: 17px;
+}
+
+.aspects article p {
+    font-size: 0.7rem;
+}
+
+.load-capacity::before {
+    content: "";
+    background-image: url(../img/cargo.svg);
 }
