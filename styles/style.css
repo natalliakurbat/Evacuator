@@ -44,7 +44,8 @@ h3 {
 }
 
 .cards,
-.what-inside {
+.what-inside,
+.weight {
     background-color: #F2F4F8;
 }
 
@@ -360,12 +361,8 @@ section.how-to-call {
     max-width: 332px;
     width: 100%;
     border-radius: 20px;
-    padding: 0 20px 28px;
+    padding: 31px 20px 28px;
     position: relative;
-}
-
-.aspects article:first-child {
-    padding-top: 31px;
 }
 
 .aspects article h4 {
@@ -377,7 +374,7 @@ section.how-to-call {
     font-size: 0.7rem;
 }
 
-.load-capacity::before {
+.aspect::before {
     content: "";
     width: 150px;
     height: 80px;
@@ -385,58 +382,106 @@ section.how-to-call {
     padding-top: 12px;
     border-radius: 150px 150px 0 0;
     background-color: #0297D4;
-    background-image: url(../img/cargo.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: -80px;
     left: 91.5px;
+}
+
+.load-capacity::before {
+    background-image: url(../img/cargo.svg);
 }
 
 .mileage::before {
-    content: "";
-    width: 150px;
-    height: 80px;
-    display: block;
-    padding-top: 12px;
-    border-radius: 150px 150px 0 0;
-    background-color: #0297D4;
     background-image: url(../img/mileage.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: -80px;
-    left: 91.5px;
 }
 
 .equipment::before {
-    content: "";
-    width: 150px;
-    height: 80px;
-    display: block;
-    padding-top: 12px;
-    border-radius: 150px 150px 0 0;
-    background-color: #0297D4;
     background-image: url(../img/settings.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: -80px;
-    left: 91.5px;
 }
 
 .difficulty-level::before {
-    content: "";
-    width: 150px;
-    height: 80px;
-    display: block;
-    padding-top: 12px;
-    border-radius: 150px 150px 0 0;
-    background-color: #0297D4;
     background-image: url(../img/difficulty.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+}
+
+
+/*Преимущества онлайн сервиса*/
+
+.content {
+    position: relative;
+    margin-bottom: 430px;
+}
+
+.content-info {
+    display: flex;
+    align-items: center;
+}
+
+.content-text {
+    max-width: 804px;
+}
+
+.content-text p:last-child {
+    font-weight: bold;
+    margin: 32px 0;
+}
+
+.bonuses {
+    max-width: 733px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-content: center;
+    position: relative;
+}
+
+.bonuses p {
+    margin-left: 48px;
+}
+
+.bonuses p::before {
+    content: "";
+    background-image: url("..//img/done.svg");
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
     position: absolute;
-    top: -80px;
-    left: 91.5px;
+    left: 0;
+}
+
+.photo-man {
+    max-width: 630px;
+    width: 100%;
+}
+
+.additional-information {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    position: absolute;
+    top: 1140px;
+}
+
+.additional-information article {
+    background-color: #FFF5CC;
+    border-radius: 20px;
+    padding: 48px;
+    max-width: 684px;
+}
+
+.additional-information h4 {
+    margin-bottom: 32px;
+}
+
+.payment p:last-child {
+    margin-top: 32px;
+}
+
+
+/*Какой вес может взять на борт эвакуатор*/
+
+.weight h3 {
+    margin-top: 150px;
 }
