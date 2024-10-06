@@ -9,10 +9,12 @@ html {
 }
 
 body {
+    width: 100%;
     font-family: 'San Francisco Pro Text', arial, sans-serif;
 }
 
 .wrapper {
+    width: 100%;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -47,6 +49,11 @@ h3 {
 .what-inside,
 .weight {
     background-color: #F2F4F8;
+}
+
+.evacuation,
+.location {
+    background-color: #FFF5CC;
 }
 
 
@@ -203,7 +210,6 @@ td:last-child {
 }
 
 .location {
-    background-color: #FFF5CC;
     padding: 16px 20px;
     border-radius: 10px;
     font-size: 0.77rem;
@@ -429,6 +435,9 @@ section.how-to-call {
 
 .bonuses {
     max-width: 733px;
+}
+
+.items {
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -436,11 +445,12 @@ section.how-to-call {
     position: relative;
 }
 
-.bonuses p {
+.items li {
     margin-left: 48px;
+    list-style-type: none;
 }
 
-.bonuses p::before {
+.items li::before {
     content: "";
     background-image: url("..//img/done.svg");
     display: block;
@@ -485,3 +495,196 @@ section.how-to-call {
 .weight h3 {
     margin-top: 150px;
 }
+
+.weight p:nth-of-type(2) {
+    font-weight: bold;
+    margin: 32px 0;
+}
+
+.slider {
+    font-size: 0.77rem;
+    position: relative;
+    margin-bottom: 55%;
+}
+
+.slider article {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: calc(100%/2);
+    height: 682px;
+}
+
+.slider article img {
+    margin: 20px 0;
+}
+
+.slider-page {
+    display: flex;
+    gap: 32px;
+    position: absolute;
+}
+
+#i1,
+#i2 {
+    display: none;
+}
+
+.prev,
+.next {
+    display: block;
+    width: 52px;
+    height: 52px;
+    background-repeat: no-repeat;
+    border: 1px solid #0297D4;
+    border-radius: 8px;
+    position: absolute;
+    top: calc(50% - 26px);
+    z-index: 99;
+    cursor: pointer;
+}
+
+.prev {
+    left: -84px;
+}
+
+.next {
+    right: -84px;
+}
+
+.prev::before {
+    content: "";
+    display: block;
+    background-image: url(../img/arrow-left.svg);
+    background-repeat: no-repeat;
+    margin: calc(50% - 12px) auto;
+    width: 24px;
+    height: 24px;
+}
+
+.next::before {
+    content: "";
+    display: block;
+    background-image: url(../img/arrow-right.svg);
+    background-repeat: no-repeat;
+    margin: calc(50% - 12px) auto;
+    width: 24px;
+    height: 24px;
+}
+
+#nav_slide {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: -721px;
+}
+
+.dots {
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+    position: relative;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #B3C8D1;
+}
+
+.slider-page {
+    z-index: -1;
+}
+
+#i1:checked~#one,
+#i2:checked~#two {
+    z-index: 9;
+}
+
+#i1:checked~#nav_slide #dot1,
+#i2:checked~#nav_slide #dot2 {
+    background-color: #0297D4;
+}
+
+
+/*Заказ эвакуатора*/
+
+.evacuation {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+}
+
+section.evacuation {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.evacuation article:first-child {
+    margin: 80px 56px 60px 260px;
+}
+
+.evacuation article:last-child {
+    margin: 60px 260px 60px 56px;
+}
+
+.evacuation h3 {
+    margin-bottom: 32px;
+}
+
+.evacuation p {
+    margin-bottom: 32px;
+}
+
+
+/*Стоимость и как заказать*/
+
+
+/*Подвал*/
+
+footer {
+    background-color: #586C75;
+    padding: 41px 0 87px;
+    position: relative;
+}
+
+footer .logo img {
+    margin-top: 0;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: #fff;
+    font-size: 0.61rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:not(:last-child) {
+    margin-right: 63.5px;
+}
+
+.button-up {
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    border: 1px solid #0297D4;
+    border-radius: 8px;
+    position: fixed;
+    right: 73px;
+    bottom: 275px;
+}
+
+.button-up a::before {
+    content: "";
+    display: block;
+    background-image: url(../img/arrow-up.svg);
+    background-repeat: no-repeat;
+    margin: calc(50% - 13px) auto;
+    width: 17px;
+    height: 25px;
+}
+
